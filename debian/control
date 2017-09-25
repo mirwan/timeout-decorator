@@ -1,0 +1,33 @@
+Source: timeout-decorator
+Section: python
+Priority: optional
+Maintainer: Patrick Ng <pn.appdev@gmail.com>
+Uploaders: Patrick Ng <pn.appdev@gmail.com>
+Build-Depends:
+ debhelper (>= 9),
+ dh-python,
+ python-all (>= 2.7),
+ python-pyldap,
+ python-setuptools,
+ python3-all (>= 3.4),
+ python3-setuptools,
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.4
+Standards-Version: 3.9.8
+Homepage: https://pypi.python.org/pypi/timeout-decorator
+Vcs-Git: https://github.com/pnpnpn/timeout-decorator.git
+Vcs-Browser: https://github.com/pnpnpn/timeout-decorator
+
+Package: python-timeout-decorator
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python:Depends}
+Description: Timeout decorator for Python
+
+Package: python3-timeout-decorator
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends}
+Description: Timeout decorator for Python
